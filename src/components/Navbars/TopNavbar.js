@@ -1,14 +1,8 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.2.2
+* Daada INC - web - v1.0.0
 =========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
 
 =========================================================
 
@@ -19,7 +13,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 // reactstrap components
 import {
-  Button,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -29,7 +22,6 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip,
 } from "reactstrap";
 
 export default function ExamplesNavbar() {
@@ -70,12 +62,9 @@ export default function ExamplesNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" id="navbar-brand" tag={Link}>
-            <span>BLK• </span>
-            Design System React
+            <span>DaaDa INC• </span>
+            App
           </NavbarBrand>
-          <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Designed and Coded by Creative Tim
-          </UncontrolledTooltip>
           <button
             aria-expanded={collapseOpen}
             className="navbar-toggler navbar-toggler"
@@ -112,60 +101,19 @@ export default function ExamplesNavbar() {
             </Row>
           </div>
           <Nav navbar>
-            <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="https://twitter.com/CreativeTim"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Follow us on Twitter"
-              >
-                <i className="fab fa-twitter" />
-                <p className="d-lg-none d-xl-none">Twitter</p>
-              </NavLink>
-            </NavItem>
-            <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Like us on Facebook"
-              >
-                <i className="fab fa-facebook-square" />
-                <p className="d-lg-none d-xl-none">Facebook</p>
-              </NavLink>
-            </NavItem>
-            <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Follow us on Instagram"
-              >
-                <i className="fab fa-instagram" />
-                <p className="d-lg-none d-xl-none">Instagram</p>
+            <NavItem>
+              <NavLink tag={Link} href="#home">
+                Home
               </NavLink>
             </NavItem>
             <NavItem>
-              <Button
-                className="nav-link d-none d-lg-block"
-                color="primary"
-                target="_blank"
-                href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-examples-navbar-upgrade-pro"
-              >
-                <i className="tim-icons icon-spaceship" /> Upgrade to PRO
-              </Button>
-            </NavItem>
-            <NavItem>
-              <NavLink tag={Link} to="/">
-                Back to Kit
+              <NavLink tag={Link} href="#services">
+                Our Services
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
-                Have an issue?
+              <NavLink tag={Link} href="#about-us">
+                About Us
               </NavLink>
             </NavItem>
           </Nav>

@@ -39,7 +39,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import TopNavbar from "components/Navbars/TopNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
 export default function RegisterPage() {
@@ -77,7 +77,7 @@ export default function RegisterPage() {
   };
   return (
     <>
-      <ExamplesNavbar />
+      <TopNavbar />
       <div className="wrapper">
         <div className="page-header">
           <div className="page-header-image" />

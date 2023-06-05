@@ -1,14 +1,8 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.2.2
+* Daada INC - web - v1.0.0
 =========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
 
 =========================================================
 
@@ -24,9 +18,9 @@ import "assets/scss/blk-design-system-react.scss";
 import "assets/demo/demo.css";
 
 import Index from "views/Index.js";
-import LandingPage from "views/examples/LandingPage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
+import LandingPage from "views/pages/LandingPage.js";
+import RegisterPage from "views/pages/RegisterPage.js";
+import ProfilePage from "views/pages/ProfilePage.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -37,7 +31,7 @@ root.render(
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/register-page" element={<RegisterPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
-      <Route path="*" element={<Navigate to="/components" replace />} />
+      <Route path="*" element={<Navigate to="/landing-page" replace />} />
     </Routes>
   </BrowserRouter>
 );
